@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+html
+{
+    height: 100%;
+    width:100%;
+}
+
+h2
+{
+    color:rgb(92,175,175);
+
+}
+
+
+body
+{
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    font-family: "datalegreya";
+    font-size: 1.2em;
+
+}
+
+@font-face
+{
+    font-family: "datalegreya";
+    src: url(datalegreya/datalegreya-thin.otf);
+}
+
+.photo
+{
+    text-align: center;
+}
+
+.bloccouleur
+{
+    border-right: 1px solid grey;
+    height: 100%;
+    width: 20%;
+    padding: 0.8em;
+
+   
+}
+
+
+.information
+{
+    margin-top: 50px;
+    border-top: 4px double black;   
+    padding: 1.5em;
+
+}
+
+.expérience
+{
+  
+    text-align: justify;
+    display: flex;
+
+}
+
+
+.datefo
+    {
+        border-right: 1px solid black;
+        padding-right:25px;
+    
+    }
+
+h1
+    {
+    text-align: right;
+    font-size: 4em;
+    flex:1;
+    font-weight: normal;
+   letter-spacing: 0.3em;
+    }
+.présentation
+    {
+    flex: 2;
+    margin:auto;
+    text-align: center;
+ 
+
+        
+    }
+.page
+{
+    display: flex;
+    flex-direction: column;
+}
+.head
+{
+    display:flex;
+    flex-direction: row-reverse;
+    min-height:10em;
+
+
+}
+
+.compétences
+{
+    padding-left: 10em;
+}
+
+.connaissance
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.h2
+{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+
+}
+td
+{min-width: 10em;
+vertical-align: top;
+padding: 8px;
+
+}
+
+
+
+.c1
+{
+    border-right: 1px solid grey;
+   
+}
+
+table{
+    border-collapse: collapse;
+}
+@media screen and (max-width: 1024px)
+{
+    .bloccouleur
+    {
+       display:none; 
+    }
+    .information
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    body
+    {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+}
