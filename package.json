@@ -1,0 +1,18 @@
+{
+  "name": "cvopencr",
+  "version": "1.0.0",
+  "description": "marie brossard cv",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariebrsd/CV.git"
+  },
+  "author": "marie brossard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariebrsd/CV/issues"
+  },
+  "homepage": "https://github.com/mariebrsd/CV#readme"
+}
