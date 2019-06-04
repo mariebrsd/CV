@@ -111,12 +111,10 @@ font-size: 1.5em;
 
 .expérience
 {
-    text-align: justify;
     display: flex;
 }
 .études{
     font-size: 1.1em;
-    text-align: justify;
 }
 
 .c1
