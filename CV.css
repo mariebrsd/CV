@@ -66,13 +66,12 @@ h2
 
 .contact 
 {
-   margin:auto;
    width: 220px;
 }
 
 .ci
 {
-    margin:auto;
+    margin-bottom: 3.3em;
     width: 220px;
 }
 
@@ -134,6 +133,7 @@ tr
 {
     display: flex;
     flex-wrap: nowrap;
+    padding-top:1.5em;
 
 }
 
@@ -167,8 +167,6 @@ tr:hover
 
     .information h2{
         margin-top: 30px;
-        font-size: 2em; 
-        padding:1.5em;
     }
 
     td{
@@ -195,6 +193,11 @@ tr:hover
     h1{
         font-size: none;
         letter-spacing: none;
+        margin:auto;
+    }
+
+    h2{
+        font-size: 2em;
     }
     .page{
         margin:0;
@@ -203,7 +206,7 @@ tr:hover
     .présentation
     {
         flex: 2;
-        margin: 0;
+        margin: auto;
         padding:3em;
         font-size: 1.5em; 
         text-align: center;      
@@ -211,6 +214,7 @@ tr:hover
 
     .connaissance{
         flex-direction: column;
+        padding-top:0;
     }
 
     .compétences{
@@ -229,7 +233,7 @@ tr:hover
     }
     .information
     {
-        padding-bottom:0;
+        padding:24px;
     }
 
 }
