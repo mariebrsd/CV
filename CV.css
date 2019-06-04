@@ -22,7 +22,6 @@ body
     padding: 0;
     display: flex;
     font-family: "datalegreya";
-    font-size: 1.2em;
 }
 
 h1
@@ -50,6 +49,9 @@ h2
     justify-content: space-around;
     padding:15px;
     position: fixed;
+    min-width: 250px;
+    background-color: white;
+    font-size: 1.2em;
 }
 .photo
 {
@@ -76,7 +78,8 @@ h2
 {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    margin-left:20%;
+    width:100%;
 }
 
 .head
@@ -89,8 +92,12 @@ h2
 .présentation
 {
     flex: 2;
-    margin:auto;
+    margin:5em;
     text-align: center;      
+}
+
+.zoom:hover{
+font-size: 1.5em;
 }
 
 .information
@@ -98,12 +105,18 @@ h2
     margin-top: 50px;
     border-top: 4px double black;   
     padding: 1.5em;
+    min-width: 960px;
+    font-size: 1.1em;
 }
 
 .expérience
 {
     text-align: justify;
     display: flex;
+}
+.études{
+    font-size: 1.1em;
+    text-align: justify;
 }
 
 .c1
@@ -119,10 +132,16 @@ td
     padding: 8px;
 }
 
+tr
+{
+    width: 100%;
+}
+
 .connaissance
 {
     display: flex;
     flex-wrap: nowrap;
+    text-align: justify
 }
 
 .compétences
@@ -149,6 +168,7 @@ tr:hover
         display: flex;
         flex-direction: column-reverse;
         height:auto;
+        font-size: 1.2em;
     }
 
     .bloccouleur{
@@ -169,5 +189,18 @@ tr:hover
         margin:0;
     }
 
+    .connaissance{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .compétences{
+        padding: 0;
+       
+    }
+
+    .ci{
+        max-width: none;
+    }
 }
 
