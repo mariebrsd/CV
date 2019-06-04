@@ -1,5 +1,8 @@
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
 @font-face
@@ -91,7 +94,9 @@ h2
 {
     flex: 2;
     margin:5em;
-    text-align: center;      
+    text-align: center;
+    width: 100%;
+    font-size: 1.1em;       
 }
 
 .zoom:hover{
@@ -100,10 +105,10 @@ font-size: 1.5em;
 
 .information
 {
-    margin-top: 50px;
     border-top: 4px double black;   
-    padding: 1.5em;
-    min-width: 960px;
+    padding:4em;
+    padding-left: 7em;
+    width: 100%;
 }
 
 .c1
@@ -117,6 +122,7 @@ td
 {
     vertical-align: top;
     padding: 8px;
+    font-size: 1em; 
 }
 
 tr
@@ -147,7 +153,7 @@ tr:hover
     font-weight: bold;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .photo{
         display:none; 
     }
@@ -156,6 +162,21 @@ tr:hover
         display: flex;
         flex-direction: column-reverse;
         height:auto;
+        width:100%; 
+    }
+
+    .information h2{
+        margin-top: 30px;
+        font-size: 2em; 
+        padding:1.5em;
+    }
+
+    td{
+        width:20%;
+        word-break: break-word;
+    }
+    tr > td {
+        width: 80%; 
     }
 
     .bloccouleur{
@@ -177,6 +198,15 @@ tr:hover
     }
     .page{
         margin:0;
+    }
+
+    .présentation
+    {
+        flex: 2;
+        margin: 0;
+        padding:3em;
+        font-size: 1.5em; 
+        text-align: center;      
     }
 
     .connaissance{
