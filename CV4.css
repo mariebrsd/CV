@@ -34,6 +34,7 @@ body
     flex-direction: column;
     margin-left:20%;
     height:auto;
+    width: 80%;
 }
 
 header
