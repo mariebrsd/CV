@@ -34,7 +34,6 @@ body
     flex-direction: column;
     margin-left:20%;
     height:auto;
-    width: 80%;
 }
 
 header
@@ -71,7 +70,7 @@ main
 
 h2
 {
-    color:rgb(92,175,175);
+    color:rgb(32,205,119);
 }
 
 table{
@@ -94,7 +93,7 @@ td
 
 tr:hover
 {
-    color: rgb(92,175,175); 
+    color:rgb(32,205,119);
     font-weight: bold;
 }
 
