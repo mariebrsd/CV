@@ -112,6 +112,7 @@ tr:hover
 
 aside
 {
+    padding-top: 3em;
     border-right: 1px solid grey;
     height: 100%;
     width: 20%;
