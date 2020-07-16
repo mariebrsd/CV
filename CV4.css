@@ -113,7 +113,7 @@ tr:hover
 
 aside
 {
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 2em;
     border-right: 1px solid grey;
     height: 100%;
@@ -159,7 +159,7 @@ footer
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 
 .page
 {
