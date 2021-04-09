@@ -7,8 +7,8 @@
 
 @font-face
 {
-    font-family: "datalegreya";
-    src: url(datalegreya/datalegreya-thin.otf);
+    font-family: "datalegreya" "minion pro regular";
+    src: url(datalegreya/datalegreya-thin.otf) url(minionproregular.otf);
 }
 
 html
@@ -106,7 +106,7 @@ tr:hover
 
 .compétences
 {
-    padding-left: 10em;
+    padding-left: 50em;
     padding-right: 3em;
 
 }
