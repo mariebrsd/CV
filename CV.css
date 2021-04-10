@@ -1,3 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 @font-face {
     font-family: "datalegreya" ;
     src:url(datalegreya/Datalegreya-Dot.otf);
@@ -11,22 +58,49 @@
 body {
 
     font-family: "minion pro regular";
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
 }
 
 h1{
 font-size: 3em;
 font-weight: 500;
+padding-bottom:15%;
+padding-top:15%;
 }
 
 h2 {
     font-family: "datalegreya";
     font-size: 2em;
+    padding-top:4%;
+    padding-bottom:4%;
+}
+
+.h2bis {
+    font-family: "datalegreya";
+    font-size: 2em;
+    text-align: right;
+    padding-bottom:3%;
 }
 
 h3 {
     font-family: "datalegreya";
+    border-bottom: 2px solid black;
+    font-size: 70%;
+    padding-bottom: 10px;
+}
+
+h4 {
+    padding-bottom:1%;
+    font-weight:bold;
+    font-size: 90%;
+
+}
+
+p {
+    line-height: 130%;
+    font-size: 90%;
 }
 
 .button {
@@ -41,7 +115,7 @@ h3 {
     -khtml-border-radius:5px; 
     -webkit-border-radius:5px; 
     border-radius:5px;
-    font-size: 70%;
+    font-size: 80%;
 }
 
 .introduction {
@@ -77,7 +151,8 @@ a:visited {
 
 .présentation {
     padding-top: 120px;
-    width: 50%;
+    width: 80%;
+    margin-right: 5%;
    
 }
 
@@ -91,4 +166,202 @@ a:visited {
 
 .compétences {
     margin-top: 20%;
+}
+
+.tableau {
+    display: flex;
+    flex-direction:row;
+}
+
+.acquises {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bloc1 {
+    padding-left:30px; 
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:1px solid #000000; 
+    box-shadow: 3px 3px 3px rgb(158, 158, 158);
+    -moz-border-radius:5px; 
+    -khtml-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    margin-top: 30px;
+    margin-bottom: 8%;
+}
+
+.bloc2 {
+    padding-left:30px; 
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:1px solid #000000; 
+    box-shadow: 3px 3px 3px rgb(158, 158, 158);
+    -moz-border-radius:5px; 
+    -khtml-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    margin-top: 30px;
+    margin-bottom: 8%;
+    margin-left: 8%;
+}
+
+.colonne1 {
+    width: 66%;
+    margin-right: 8%;
+}
+
+.encours {
+ width: 33%;
+}
+
+.accroche {
+ font-style: italic;
+ padding-bottom: 5%;
+ padding-left: 25%;
+ padding-right: 20%;
+ text-align:justify;
+}
+
+.expériences{
+ padding-top: 15%;
+}
+
+.gauche {
+    width: 10%;
+}
+
+.droite {
+    padding-left: 15%;
+    padding-right: 20%
+}
+
+td {
+    padding-bottom: 7%;
+}
+
+.études{
+    padding-top: 5%;
+   }
+
+.frise {
+    display: flex;
+    flex-direction: row;
+    padding-top:5%;
+}
+
+.bac {
+    border-right: 1px solid black;
+    padding-right: 5%;
+    position:relative;
+}
+
+.bac::after {
+    content:"2011";
+    position:absolute ;
+    top: -30px;
+    right: -11px;
+    font-family: "datalegreya";
+    font-size: 80%;
+}
+
+.licencedroit {
+    border-right: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 180px;
+    position:relative;
+}
+
+.licencedroit::after {
+    content:"2013";
+    position:absolute ;
+    top: -30px;
+    right: -11px;
+    font-family: "datalegreya";
+    font-size: 80%;
+}
+
+.manaa {
+    border-right: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+    position:relative;
+}
+
+.manaa::after {
+    content:"2018";
+    position:absolute ;
+    top: -30px;
+    right: -11px;
+    font-family: "datalegreya";
+    font-size: 80%;
+}
+
+.licenceLC {
+    padding-left: 5%;
+}
+    
+.ligne1 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:130%;
+}
+
+.ligne2 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:195%;
+    transform: translateX(-25%);
+}
+
+.ligne3 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:135%;
+    transform: translateX(-30%);
+}
+
+.ligne4 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:200%;
+    transform: translateX(-19%);
+}
+
+.contact {
+    padding-bottom:3%;
+    padding-top:15%;
+}
+
+.conclusion {
+    font-family: "datalegreya";
+    font-size: 2em;
+    text-align: center;
+}
+
+.caseconclusion {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 50px;
+}
+
+footer {
+    padding-top:15%;
+    padding-bottom:2%;
+
+}
+
+.pieddepage{
+    text-align: right;
 }
