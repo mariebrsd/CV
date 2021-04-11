@@ -20,9 +20,9 @@
             </div>
             <div class="sommaire">
                 <h2>introduction</h2> 
-                <h2>compétences</h2> 
-                <h2>expériences professionnelles</h2> 
-                <h2>études</h2> 
+                <h2><a href="#ancrecompétences"compétences>compétences</a></h2> 
+                <h2><a href="#ancreexpériences"compétences>expériences</a></h2> 
+                <h2><a href="#ancreétudes"compétences>études</a></h2> 
             </div> 
         </div>
         <div class="case">
@@ -39,7 +39,7 @@
         </header>
         <main>
             <section class="compétences">
-                <p class="h2bis">compétences.</p>
+                <p id="ancrecompétences"class="h2bis">compétences.</p>
                 <div class="tableau">
                 <div class="colonne1">
                     <h3>Acquises</h3>
@@ -90,7 +90,7 @@
             </section>
                 
             <section class=expériences>
-                    <p class="h2bis">expériences.</p>
+                    <p id=ancreexpériences class="h2bis">expériences.</p>
                     <p class="accroche">Actuellement en poste comme assistante à la valorisation 
                         de la recherche au sein de l’équipe de droit international 
                         et comparé de l’université Jean Moulin Lyon 3, j’assure 
@@ -143,7 +143,7 @@
                 </section>
 
                 <section class="études">
-                    <p class="h2bis">études.</p>
+                    <p id=ancreétudes class="h2études">études.</p>
                     <p class="accroche">J’ai repris à 25 ans une licence en Lettres Classiques en enseignement 
                         à distance à l’université Bordeaux Montaigne afin de pouvoir conserver 
                         mon emploi. Je suis actuellement en troisième année de licence et j’envisage 
@@ -159,7 +159,7 @@
                             </br> juin 2011</p>
                         </div>
                         <div class="licencedroit">
-                            <h4>LICENCE DROIT ET SCIENCE POLITIQUE</h4>
+                            <h4 class="h4dsp">LICENCE DROIT ET SCIENCE POLITIQUE</h4>
                             <div class= "ligne2"></div>
                             <p class="detail">Niveau L2
                                 </br> Université Lumière Lyon 2
@@ -200,12 +200,29 @@
                         <a href="Brossard_CV_2021.pdf"download="Brossard_CV_2021">Télécharger la version PDF</a>
                     </div>
                 </div>
+                <form
+                    action="https://formspree.io/f/xoqyqbee"
+                    method="POST"
+                    >
+                    <label>
+                        Votre e-mail:
+                        <input type="email" name="_replyto">
+                    </label>
+                    <label>
+                        Votre message:
+                        <textarea name="message"></textarea>
+                    </label>
+
+                    <!-- your other form fields go here -->
+
+                    <button type="submit">Envoyer</button>
+                </form>
                 </section>
         </main>
     </div>
 
     <footer>
-        <p class="pieddepage"> Marie Brossard | 2021 © Tous droits réservés.</p>
+        <p class="pieddepage"> Marie Brossard | Lyon | 2021 © Tous droits réservés.</p>
     </footer>
 </body>
 
