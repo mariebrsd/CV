@@ -1,0 +1,805 @@
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: "datalegreya" ;
+    src:url(datalegreya/Datalegreya-Dot.otf);
+}
+
+@font-face {
+    font-family: "minion pro regular";
+    src:url(minionproregular.otf);
+}
+
+body {
+
+    font-family: "minion pro regular";
+    padding-left: 15%;
+    padding-right: 15%;
+    overflow-x: hidden;
+}
+
+h1{
+font-size: 3em;
+font-weight: 500;
+padding-bottom:5%;
+padding-top:15%;
+}
+
+h2 {
+    font-family: "datalegreya";
+    font-size: 2em;
+    padding-top:15%;
+    padding-bottom:10%;
+    position:relative;
+}
+
+@keyframes slidein {
+    from {
+      left: 300%;
+    }
+  
+    to {
+      left: 5%;
+    }
+  }
+
+h2:hover::before {
+    animation: 0.3s linear forwards slidein;
+    display: block;
+}
+
+h2::before {
+    content:"";
+    position:absolute;
+    display: none;
+    top: 40px;
+    left: 300%;
+    background-color: rgb(215, 238, 225);
+    height: 20px;
+    width: 260%;
+    z-index: -1;
+
+}
+
+@keyframes slidein2 {
+    from {
+      left: 100%;
+    }
+  
+    to {
+      left: 83%;
+    }
+  }
+
+.h2bis {
+    font-family: "datalegreya";
+    font-size: 2em;
+    text-align: right;
+    padding-bottom:3%;
+    position:relative;
+}
+
+.h2bis:hover::before {
+    animation: 0.2s linear forwards slidein2;
+    display: block;
+}
+
+.h2bis::before {
+    content:"";
+    display: none;
+    position:absolute;
+    background-color: rgb(215, 238, 225);
+    top: 19px;
+    left: 125%;
+    height: 19px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+@keyframes slidein4 {
+    from {
+      left: 100%;
+    }
+  
+    to {
+      left: 92%;
+    }
+  }
+
+.skills {
+    font-family: "datalegreya";
+    font-size: 2em;
+    text-align: right;
+    padding-bottom:3%;
+    position:relative;
+}
+
+.skills:hover::before {
+    animation: 0.2s linear forwards slidein4;
+    display: block;
+}
+
+.skills::before {
+    content:"";
+    display: none;
+    position:absolute;
+    background-color: rgb(215, 238, 225);
+    top: 19px;
+    left: 125%;
+    height: 19px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.h2études {
+    font-family: "datalegreya";
+    font-size: 2em;
+    text-align: right;
+    padding-bottom:3%;
+    position:relative;
+}
+
+@keyframes slidein3 {
+    from {
+      left: 100%;
+    }
+  
+    to {
+      left: 89%;
+    }
+  }
+
+.h2études:hover::before {
+    animation: 0.2s linear forwards slidein3;
+    display: block;
+}
+
+.h2études::before {
+    content:"";
+    position:absolute;
+    display:none;
+    background-color: rgb(215, 238, 225);
+    top: 19px;
+    left: 125%;
+    height: 19px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+
+
+h3 {
+    font-family: "datalegreya";
+    border-bottom: 2px solid black;
+    font-size: 70%;
+    padding-bottom: 10px;
+}
+
+h4 {
+    padding-bottom:1%;
+    font-weight:bold;
+    font-size: 90%;
+
+}
+
+.h4dsp {
+    padding-bottom:1%;
+    font-weight:bold;
+    font-size: 90%;
+    min-height:40px;
+}
+
+
+p {
+    line-height: 130%;
+    font-size: 90%;
+}
+
+.button {
+    padding-left:15px; 
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 3%;
+    border:1px solid #000000; 
+    box-shadow: 3px 3px 3px rgb(158, 158, 158);
+    -moz-border-radius:5px; 
+    -khtml-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    font-size: 80%;
+}
+
+.introduction {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button:hover {
+    border:1px solid rgb(92, 241, 179);
+    box-shadow: 3px 3px 3px rgb(167, 236, 207);
+}
+
+.button:hover a {
+    color: rgb(92, 241, 179);
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    color:black;
+}
+
+.case {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+.présentation {
+    padding-top: 90px;
+    width: 80%;
+    margin-right: 5%;
+   
+}
+
+.intitulé {
+    font-size: 90%;
+}
+
+.sommaire {
+    margin-top:35px;
+}
+
+.compétences {
+    margin-top: 20%;
+}
+
+.tableau {
+    display: flex;
+    flex-direction:row;
+}
+
+.acquises {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.github:hover .bloc1{
+    color: rgb(92, 241, 179);
+    border: 1px solid rgb(92, 241, 179);
+    box-shadow: 3px 3px 3px rgb(167, 236, 207);
+}
+
+
+.bloc1 {
+    padding-left:30px; 
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:1px solid #000000; 
+    box-shadow: 3px 3px 3px rgb(158, 158, 158);
+    -moz-border-radius:5px; 
+    -khtml-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    margin-top: 30px;
+    margin-bottom: 8%;
+    word-break: break-word;
+}
+
+.bloc2 {
+    padding-left:30px; 
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:1px solid #000000; 
+    box-shadow: 3px 3px 3px rgb(158, 158, 158);
+    -moz-border-radius:5px; 
+    -khtml-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    margin-top: 30px;
+    margin-bottom: 8%;
+    margin-left: 8%;
+}
+
+.colonne1 {
+    width: 66%;
+    margin-right: 8%;
+}
+
+.colonneG{
+    width: -webkit-fill-available;
+}
+
+.colonne2 {
+    width: -webkit-fill-available;
+}
+
+.encours {
+    width: 33%;
+}
+
+.accroche {
+    font-style: italic;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: 20%;
+    text-align:justify;
+}
+
+.expériences{
+    padding-top: 15%;
+}
+
+.gauche {
+    width: 15%;
+}
+
+.droite {
+    padding-left: 10%;
+    padding-right: 20%
+}
+
+td {
+    padding-bottom: 7%;
+}
+
+.études{
+    padding-top: 5%;
+   }
+
+.frise {
+    display: flex;
+    flex-direction: row;
+    padding-top:5%;
+}
+
+.bac {
+    border-right: 1px solid black;
+    padding-right: 3%;
+    position:relative;
+    min-height: 210px;
+    width: -webkit-fill-available;
+}
+
+.bac::after {
+    content:"2011";
+    position:absolute ;
+    top: -30px;
+    right: -11px;
+    font-family: "datalegreya";
+    font-size: 80%;
+}
+
+.licencedroit {
+    border-right: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 180px;
+    position:relative;
+    width: -webkit-fill-available;
+}
+
+.licencedroit::after {
+    content:"2013";
+    position:absolute ;
+    top: -30px;
+    right: -11px;
+    font-family: "datalegreya";
+    font-size: 80%;
+}
+
+
+.manaa {
+    border-right: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+    position:relative;
+    width: -webkit-fill-available;
+}
+
+.manaa::after {
+    content:"2018";
+    position:absolute ;
+    top: -30px;
+    right: -11px;
+    font-family: "datalegreya";
+    font-size: 80%;
+}
+
+.licenceLC {
+    padding-left: 5%;
+    width: -webkit-fill-available;
+}
+    
+.ligne1 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:123%;
+}
+
+.ligne2 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:180%;
+    transform: translateX(-22%);
+}
+
+.ligne3 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:120%;
+    transform: translateX(-30%);
+}
+
+.ligne4 {
+    border-top: 2px solid black;
+    padding-top: 15%;
+    margin-top: 13%;
+    width:170%;
+    transform: translateX(-16%);
+}
+
+.contact {
+    padding-bottom:3%;
+    padding-top:15%;
+}
+
+.conclusion {
+    font-family: "datalegreya";
+    font-size: 2em;
+    text-align: center;
+}
+
+.caseconclusion {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 50px;
+}
+
+footer {
+    padding-top:5%;
+    padding-bottom:2%;
+
+}
+
+.pieddepage{
+    text-align: right;
+}
+
+.rectangle {
+    width: 20%;
+    height: 5%;
+    background-color: rgb(158, 158, 158);
+
+}
+
+label {
+    font-family: "minion pro regular";
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+input { 
+    max-width: 250px;
+}
+
+button {
+    border:0px;
+    background-color: transparent;
+    font-family: "datalegreya";
+    font-size: 1.3em;
+    font-weight:bolder;
+    text-align: right ;
+    width: 100px;
+    margin-left: auto;
+
+}
+
+button:hover {
+    color: rgb(92, 241, 179)
+}
+
+  
+.scroll {
+margin-left: 45%;
+font-size: 80%;
+text-decoration: underline !important;
+}
+
+.scroll:hover {
+    color: rgb(92, 241, 179);
+}
+
+.recommandation:hover {
+    color: rgb(92, 241, 179);
+}
+
+.wealowboard:hover {
+    color: rgb(92, 241, 179);
+}
+
+.langue {
+    position: relative;
+    padding-top: 15px;
+}
+.français {
+    color: rgb(92, 241, 179);
+}
+
+
+
+.english:hover {
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+@media (max-width:640px) {
+
+body {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.accroche {
+    padding: 0px;
+}
+
+.case{
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.colonne1{
+    width: auto;
+    margin-right: 0px;
+}
+
+.encours{
+    width: auto;
+    margin-top: 5%;
+}
+
+table {
+margin-top: 25px;
+}
+
+.tableau {
+    flex-direction: column-reverse;
+}
+
+
+.frise {
+    flex-direction: column;
+}
+
+.ligne1 {
+    border-top: 0px;
+    padding-top: 1%;
+    margin-top: 0%;
+    width: auto;
+}  
+
+.ligne2 {
+    border-top: 0px;
+    padding-top: 1%;
+    margin-top: 0%;
+    width: auto;
+}  
+
+
+.h4dsp {
+    min-height: 0px;
+    padding-top: 7%;
+}
+
+.ligne3 {
+    border-top: 0px;
+    padding-top: 1%;
+    margin-top: 0%;
+    width: auto;
+}  
+
+.ligne4 {
+    border-top: 0px;
+    padding-top: 1%;
+    margin-top: 0%;
+    width: auto;
+}   
+
+.bac {
+    border: 0px;
+    min-height: auto;
+}
+
+.licencedroit {
+    padding: 0px;
+    height: auto;
+    border: 0px;
+}
+    
+.manaa {
+    padding: 0px;
+    border: 0px;
+}
+
+.licenceLC {
+    padding: 0px;
+}
+
+.droite {
+    padding-right: 0%;
+}
+
+.manaa::after {
+    top: 115px;
+    right: 5px;
+}
+
+.bac::after {
+    top: 70px;
+    right: 5px;
+}
+
+.licencedroit::after {
+    top: 120px;
+    right: 5px;
+}
+
+.detail {
+    margin-bottom: 7%;
+}
+
+.button {
+    flex-shrink: 0;
+    padding:10px;
+}
+
+@keyframes slidein {
+    from {
+      left: 300%;
+    }
+  
+    to {
+      left: 5%;
+    }
+  }
+
+
+h2::before {
+    content:"";
+    position:absolute;
+    display: none;
+    top: 27px;
+    left: 100%;
+    background-color: rgb(215, 238, 225);
+    height: 10px;
+    width: 200%;
+    z-index: -1;
+
+}
+
+@keyframes slidein2 {
+    from {
+      left: 100%;
+    }
+  
+    to {
+      left: 66%;
+    }
+  }
+
+
+.h2bis::before {
+    content:"";
+    display: none;
+    position:absolute;
+    background-color: rgb(215, 238, 225);
+    top: 20px;
+    left: 125%;
+    height: 15px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+@keyframes slidein3 {
+    from {
+      left: 100%;
+    }
+  
+    to {
+      left: 82%;
+    }
+  }
+
+.h2études::before {
+    content:"";
+    position:absolute;
+    display:none;
+    background-color: rgb(215, 238, 225);
+    top: 20px;
+    left: 125%;
+    height: 15px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+
+}
