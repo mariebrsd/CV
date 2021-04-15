@@ -52,7 +52,7 @@ table {
 
 @font-face {
     font-family: "minion pro regular";
-    src:url(minionproregular.otf);
+    src:url(minionproregular.ttf) format('truetype');
 }
 
 body {
@@ -94,17 +94,9 @@ h2:hover::before {
 }
 
 h2::before {
-    content:"";
-    position:absolute;
-    display: none;
-    top: 40px;
-    left: 300%;
-    background-color:rgb(92, 241, 179);
-    opacity: 0.35;
-    height: 20px;
-    width: 260%;
-    z-index: -1;
-
+    left: 0%;
+    height: 0px;
+    width: 0%;
 }
 
 @keyframes slidein2 {
@@ -131,16 +123,9 @@ h2::before {
 }
 
 .h2bis::before {
-    content:"";
-    display: none;
-    position:absolute;
-    background-color:rgb(92, 241, 179);
-    opacity: 0.35;
-    top: 19px;
-    left: 125%;
-    height: 19px;
-    width: 100%;
-    z-index: -1;
+    left: 0%;
+    height: 0px;
+    width: 0%;
 
 }
 
@@ -168,16 +153,9 @@ h2::before {
 }
 
 .h2études::before {
-    content:"";
-    position:absolute;
-    display:none;
-    background-color:rgb(92, 241, 179);
-    opacity: 0.35;
-    top: 19px;
-    left: 125%;
-    height: 19px;
-    width: 100%;
-    z-index: -1;
+    left: 0%;
+    height: 0px;
+    width: 0%;
 
 }
 
@@ -485,10 +463,10 @@ td {
 }
 
 .caseconclusion {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column ;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -548,7 +526,7 @@ button:hover {
 
   
 .scroll {
-margin-left: 45%;
+margin-left: 40%;
 font-size: 80%;
 text-decoration: underline !important;
 }
@@ -589,7 +567,7 @@ body {
 }
 
 .case{
-    justify-content: center;
+    flex-direction: column ;
 }
 
 h2 {
@@ -699,6 +677,8 @@ margin-top: 25px;
 .button {
     flex-shrink: 0;
     padding:10px;
+    margin-top: 10px;
+    width: fit-content;
 }
 
 @keyframes slidein {
@@ -712,7 +692,7 @@ margin-top: 25px;
   }
 
 
-h2::before {
+.h2::before {
     content:"";
     position:absolute;
     display: none;
