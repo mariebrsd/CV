@@ -94,9 +94,16 @@ h2:hover::before {
 }
 
 h2::before {
-    left: 0%;
-    height: 0px;
-    width: 0%;
+    content:"";
+    position:absolute;
+    display: none;
+    top: 40px;
+    left: 300%;
+    background-color:rgb(92, 241, 179);
+    opacity: 0.35;
+    height: 20px;
+    width: 260%;
+    z-index: -1;
 }
 
 @keyframes slidein2 {
@@ -123,9 +130,17 @@ h2::before {
 }
 
 .h2bis::before {
-    left: 0%;
-    height: 0px;
-    width: 0%;
+    content:"";
+    position:absolute;
+    display: none;
+    background-color:rgb(92, 241, 179);
+    opacity: 0.35;
+    top: 19px;
+    left: 125%;
+    height: 19px;
+    width: 100%;
+    z-index: -1;
+    z-index: -1;
 
 }
 
@@ -153,9 +168,16 @@ h2::before {
 }
 
 .h2études::before {
-    left: 0%;
-    height: 0px;
-    width: 0%;
+    content:"";
+    position:absolute;
+    display: none;
+    background-color:rgb(92, 241, 179);
+    opacity: 0.35;
+    top: 19px;
+    left: 125%;
+    height: 19px;
+    width: 100%;
+    z-index: -1;
 
 }
 
@@ -463,10 +485,10 @@ td {
 }
 
 .caseconclusion {
-    display: flex;
-    flex-direction: column ;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top: 80px;
 }
 
 footer {
@@ -526,7 +548,6 @@ button:hover {
 
   
 .scroll {
-margin-left: 40%;
 font-size: 80%;
 text-decoration: underline !important;
 }
@@ -563,11 +584,26 @@ body {
     padding-right: 7%;
 }
 .accroche {
-    padding: 0px;
+    padding-bottom: 5%;
+    padding-left:0%;
+    padding-right: 0%;
+
+}
+
+.présentation {
+    padding-top: 160px;
+    width: 80%;
+    margin-right: 0%;
+   
+}
+
+.sommaire {
+    margin-top:0px;
 }
 
 .case{
     flex-direction: column ;
+    margin-top: 59px;
 }
 
 h2 {
@@ -588,6 +624,10 @@ table {
 margin-top: 25px;
 }
 
+td {
+    padding-bottom: 15%;
+}
+
 .tableau {
     flex-direction: column-reverse;
 }
@@ -598,37 +638,44 @@ margin-top: 25px;
 }
 
 .ligne1 {
-    border-top: 0px;
-    padding-top: 1%;
+    padding-top: 3%;
     margin-top: 0%;
+    margin-bottom: 2%;
     width: auto;
+    border-top: 1px solid black
 }  
 
 .ligne2 {
-    border-top: 0px;
-    padding-top: 1%;
+    padding-top: 3%;
     margin-top: 0%;
+    margin-bottom: 2%;
+    border-top: 1px solid black;
     width: auto;
+    transform: none;
 }  
 
 
 .h4dsp {
     min-height: 0px;
-    padding-top: 7%;
+    padding-top: 15%;
 }
 
 .ligne3 {
-    border-top: 0px;
-    padding-top: 1%;
+    padding-top: 3%;
     margin-top: 0%;
+    margin-bottom: 2%;
+    border-top: 1px solid black;
     width: auto;
+    transform: none;
 }  
 
 .ligne4 {
-    border-top: 0px;
-    padding-top: 1%;
+    padding-top: 3%;
     margin-top: 0%;
+    margin-bottom: 2%;
+    border-top: 1px solid black;
     width: auto;
+    transform: none;
 }   
 
 .bac {
@@ -671,7 +718,13 @@ margin-top: 25px;
 }
 
 .detail {
-    margin-bottom: 7%;
+    margin-bottom: 15%;
+}
+
+.caseconclusion {
+    flex-direction:column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button {
@@ -693,16 +746,9 @@ margin-top: 25px;
 
 
 .h2::before {
-    content:"";
-    position:absolute;
-    display: none;
-    top: 27px;
-    left: 100%;
-    background-color: rgb(215, 238, 225);
-    opacity: 0.35;
-    height: 10px;
-    width: 200%;
-    z-index: -1;
+    left: 0%;
+    height: 0px;
+    width: 0%;
 
 }
 
@@ -718,15 +764,9 @@ margin-top: 25px;
 
 
 .h2bis::before {
-    content:"";
-    display: none;
-    position:absolute;
-    background-color: rgb(215, 238, 225);
-    top: 20px;
-    left: 125%;
-    height: 15px;
-    width: 100%;
-    z-index: -1;
+    left: 0%;
+    height: 0px;
+    width: 0%;
 
 }
 
@@ -741,15 +781,9 @@ margin-top: 25px;
   }
 
 .h2études::before {
-    content:"";
-    position:absolute;
-    display:none;
-    background-color: rgb(215, 238, 225);
-    top: 20px;
-    left: 125%;
-    height: 15px;
-    width: 100%;
-    z-index: -1;
+    left: 0%;
+    height: 0px;
+    width: 0%;
 
 }
 
