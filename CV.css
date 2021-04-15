@@ -18,7 +18,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -50,14 +49,10 @@ table {
     src:url(datalegreya/Datalegreya-Dot.otf);
 }
 
-@font-face {
-    font-family: "minion pro regular";
-    src:url(minionproregular.ttf) format('truetype');
-}
 
 body {
 
-    font-family: "minion pro regular";
+    font-family: 'Times New Roman', Times, serif;
     padding-left: 15%;
     padding-right: 15%;
     overflow-x: hidden;
