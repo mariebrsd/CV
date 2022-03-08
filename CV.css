@@ -180,7 +180,7 @@ h2::before {
 h3 {
     font-family: "datalegreya";
     border-bottom: 2px solid black;
-    font-size: 70%;
+    font-size: 90%;
     padding-bottom: 10px;
 }
 
@@ -274,6 +274,7 @@ a:visited {
     flex-direction:row;
 }
 
+
 .acquises {
     display: flex;
     flex-direction:row;
@@ -288,6 +289,12 @@ a:visited {
 }
 
 .github:hover .bloc2{
+    color: rgb(92, 241, 179);
+    border: 1px solid rgb(92, 241, 179);
+    box-shadow: 3px 3px 3px rgb(167, 236, 207);
+}
+
+.github:hover{
     color: rgb(92, 241, 179);
     border: 1px solid rgb(92, 241, 179);
     box-shadow: 3px 3px 3px rgb(167, 236, 207);
@@ -308,6 +315,7 @@ a:visited {
     margin-top: 30px;
     margin-bottom: 8%;
     word-break: break-word;
+    text-align: justify;
 }
 
 .bloc2 {
@@ -324,6 +332,7 @@ a:visited {
     margin-top: 30px;
     margin-bottom: 8%;
     margin-left: 8%;
+    text-align: justify;
 }
 
 .colonne1 {
@@ -333,6 +342,8 @@ a:visited {
 
 .colonneG{
     width: -webkit-fill-available;
+    max-width: 35%;
+    min-width: fit-content;
 }
 
 .colonne2 {
@@ -352,7 +363,7 @@ a:visited {
 }
 
 .expériences{
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .gauche {
@@ -387,7 +398,7 @@ td {
 }
 
 .bac::after {
-    content:"2011";
+    content:"2013";
     position:absolute ;
     top: -30px;
     right: -11px;
@@ -405,7 +416,7 @@ td {
 }
 
 .licencedroit::after {
-    content:"2013";
+    content:"2014";
     position:absolute ;
     top: -30px;
     right: -11px;
@@ -423,7 +434,7 @@ td {
 }
 
 .manaa::after {
-    content:"2018";
+    content:"2021";
     position:absolute ;
     top: -30px;
     right: -11px;
@@ -439,7 +450,7 @@ td {
 .ligne1 {
     border-top: 2px solid black;
     padding-top: 15%;
-    margin-top: 13%;
+    margin-top: 7%;
     width:123%;
 }
 
@@ -571,7 +582,7 @@ text-decoration: underline !important;
     color: rgb(92, 241, 179);
 }
 
-@media (max-width:640px) {
+@media (max-width:800px) {
 
 body {
     padding-left: 7%;
@@ -614,6 +625,33 @@ h2 {
     margin-top: 5%;
 }
 
+.acquises {
+    display: inherit;
+}
+
+
+.colonneG{
+    max-width: -webkit-fill-available;
+    min-width: fit-content;
+}
+
+.bloc2 {
+    padding-left:30px; 
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border:1px solid #000000; 
+    box-shadow: 3px 3px 3px rgb(158, 158, 158);
+    -moz-border-radius:5px; 
+    -khtml-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    margin-top: 30px;
+    margin-bottom: 8%;
+    margin-left: 0%;
+    text-align: justify;
+}
+
 table {
 margin-top: 25px;
 }
@@ -624,7 +662,9 @@ td {
 
 .tableau {
     flex-direction: column-reverse;
+    
 }
+
 
 
 .frise {
@@ -768,20 +808,20 @@ h2::before {
 
 @keyframes slidein3 {
     from {
-      left: 100%;
+        left: 100%;
     }
-  
+    
     to {
-      left: 82%;
+        left: 82%;
+        }
     }
-  }
 
-.h2études::before {
-    left: 0%;
-    height: 0px;
-    width: 0%;
+    .h2études::before {
+        left: 0%;
+        height: 0px;
+        width: 0%;
 
-}
+    }
 
 
 }
